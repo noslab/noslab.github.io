@@ -82,55 +82,15 @@
 
 		<!-- Sidebar -->
 		<div class="col-sm-3" id="sidebar">
-			<aside>
-				<!-- Sidebar -->
-				<section class="well well-sm" style="background-color:rgba(0,0,0,0.9)">
-					<ul class="list-group list-group-flush">
-						<!-- Sidebar/Association -->
-						<li class="list-group-item">
-							<h5><i class="fa fa-home fa-lg" style="color:white"></i><span class="icon-label" style="color:white">Association</span></h5>
-							<ul class="list-group" id="social">
-								<li class="list-group-item"><a class="sidebar-a" href="http://www.changwon.ac.kr/ce">Computer Engineering</a></li>
-								<li class="list-group-item"><a class="sidebar-a "href="http://www.changwon.ac.kr/c_e">College of Engineering</a></li>
-								<li class="list-group-item"><a class="sidebar-a" href="http://www.changwon.ac.kr/">Changwon National University</a></li>
-							</ul>
-						</li>
-						<!-- Sidebar/Portal -->
-					<ul class="list-group " id="tags">
-						<li class="list-group-item"><a class="sidebar-a" href="http://portal.changwon.ac.kr/portalMain/main.do?homecd=portal"><h5>
-									<i class="fa fa-tags fa-lg"></i><span class="icon-label">Portal (Waggle)</span></h5></a>
-						</li>
-					</ul>
-
-					<!-- Sidebar/Contact -->
-					<ul class="list-group " id="tags">
-						<li class="list-group-item"><a class="sidebar-a" href="mailto:donghyun@changwon.ac.kr"><h5>
-									<i class="fa fa-envelope fa-lg"></i><span class="icon-label">Contact</span></h5></a>
-						</li>
-					</ul>
-
-						<!-- Sidebar/Links 
-						<li class="list-group-item">
-							<h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Projects</span></h4>
-							<ul class="list-group" id="links">
-								<li class="list-group-item">
-									<a href="https://github.com/cosmoss-vt/" target="_blank">GitHub</a>
-								</li>
-								<li class="list-group-item">
-									<a href="https://www.youtube.com/channel/UCCWLfxbHVuqIbfrLS5xdvBg" target="_blank">YouTube</a>
-								</li>
-							</ul>
-						</li>
-						End Sidebar/Links -->
-					</ul>
-				</section>
-				<!-- End Sidebar -->            
-			</aside>
+			<div id="sidebar"></div>
 		</div>
+		<!-- End Sidebar -->
 	</div>
 </div>
 
-<!-- End Sidebar -->
+
+<!-- ######################################################################################################################################### -->
+<!-- ######################################################################################################################################### -->
 
 <footer>
 <div class="container">
@@ -148,6 +108,14 @@
          $("#menu").load("/menu.html")
       });
 </script>   
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+      $(document).ready(function(){
+         $("#sidebar").load("/sidebar.html")
+      });
+</script>   
+
 
 
 <script src="/theme/js/jquery.min.js"></script>
