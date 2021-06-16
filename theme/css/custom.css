@@ -154,15 +154,18 @@ span.tag {
 	overflow: hidden;
 }
 
+.card__image__small {
+	width: 9rem;
+	height: 9rem;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+}
+
 .card__image img {
 	object-fit: cover;
 	width: 100%;
-	margin: auto;
-}
-
-.card__image img50 {
-	object-fit: cover;
-	width: 50%;
 	margin: auto;
 }
 
