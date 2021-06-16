@@ -160,6 +160,12 @@ span.tag {
 	margin: auto;
 }
 
+.card__image img50 {
+	object-fit: cover;
+	width: 50%;
+	margin: auto;
+}
+
 .card__title {
 	color: @gray-dark;
 	font-size: 2.5em;
