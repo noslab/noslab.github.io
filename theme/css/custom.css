@@ -153,6 +153,7 @@ span.tag {
 	margin-right: auto;
 	overflow: hidden;
 }
+
 .card__image img {
 	object-fit: cover;
 	width: 100%;
