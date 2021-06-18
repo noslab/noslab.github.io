@@ -211,5 +211,12 @@ div.photo {
 }
 
 
+div.more {
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	vertical-align: middle;
+}
+
 
 
