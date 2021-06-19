@@ -213,9 +213,9 @@ div.photo {
 
 div.more {
 	display: inline-block;
-	width: 130px;
+	width: 140px;
 	height: 40px;
-	vertical-align: top;
+	vertical-align: middle;
 }
 
 
