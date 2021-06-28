@@ -30,6 +30,7 @@
 		<link href="/theme/css/pygments/native.css" rel="stylesheet">
 		<link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
 		<link rel="stylesheet" href="/theme/css/custom.css">
+
 	</head>
 
 	<!-- ######################################################################################################################################### -->
@@ -46,26 +47,20 @@
 		<br>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-9">
 					<section id="content" class="body">
 						<div class="entry-content">
 
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
 
-							<h3>Gallery</h3>
+							<h4>Lab Renewal (2020.11.17)</h4>
+							<p><img src="/assets/gallery/20201117_A.jpg" size=400px></img></p>
+							<p><img src="/assets/gallery/20201117_B.jpg" size=400px></img></p>
 
-							<div class="card photo">
-								<div class="card__content">
-									<div class="card__title">
-										<a href="/pages/gallery/20201117.html"><h5 style="color:gray"><i class="fa fa-picture-o" aria-hidden="true"></i>Open NOSLab</h5></a>
-									</div>
-									<strong>[December 23, 2020]</strong>
-									NOSLab 연구실을 소개합니다. 
-								</div>
-								<div class="card__image"><img src="/assets/gallery/20201117_noslab.jpg"></img></div>
-							</div>
-
+							<h4>Before </h4>
+							<p><img src="/assets/gallery/20201117_C.jpg" size=400px></img></p>
+							<p><img src="/assets/gallery/20201117_D.jpg" size=400px></img></p>
 
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
@@ -73,10 +68,18 @@
 						</div>
 					</section>
 				</div>
+
+				<!-- Sidebar -->
+				<div class="col-sm-3" id="sidebar">
+					<div id="sidebar"></div>
+				</div>
+				<!-- End Sidebar -->
 			</div>
 		</div>
 
-		<!-- End Sidebar -->
+
+		<!-- ######################################################################################################################################### -->
+		<!-- ######################################################################################################################################### -->
 
 		<footer>
 			<div class="container">
@@ -92,6 +95,12 @@
 		<script type="text/javascript">
 $(document).ready(function(){
 	$("#menu").load("/menu.html")
+});
+		</script>   
+
+		<script type="text/javascript">
+$(document).ready(function(){
+	$("#sidebar").load("/sidebar.html")
 });
 		</script>   
 
