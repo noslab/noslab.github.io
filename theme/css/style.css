@@ -240,8 +240,18 @@ figure.floatcenter, .align-center {
   margin-left: 10px;
 }
 
+
 .navbar-nav li:hover .dropdown-menu {
 	display: block;
 }
+
+/* rotate caret on hover */
+.dropdown-menu > li > a:hover:after {
+	text-decoration: underline;
+	transform: rotate(-90deg);
+} 
+
+
+
 
 
