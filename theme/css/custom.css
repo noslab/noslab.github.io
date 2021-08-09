@@ -76,6 +76,7 @@ a:hover {
 
 
 .navbar-nav li:hover .dropdown-menu {
+	display: block;
 	color: red !important;
 	border-color:lightgray !important;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
