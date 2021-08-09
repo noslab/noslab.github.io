@@ -240,8 +240,3 @@ figure.floatcenter, .align-center {
   margin-left: 10px;
 }
 
-.navbar .nav-item .dropdown-menu{ display: none; }
-.navbar .nav-item:hover .nav-link{   }
-.navbar .dropdown-menu{ display: block; }
-.navbar .nav-item .dropdown-menu{ margin-top:0; }
-
