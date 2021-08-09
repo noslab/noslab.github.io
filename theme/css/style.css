@@ -244,8 +244,7 @@ figure.floatcenter, .align-center {
 .menu-item-has-children {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
-	overflow:hidden;
-	display: list-item;
+	display: none;
 	font-family: "Genericons";
 	font-size: 16px;
 	font-style: normal;
