@@ -1,11 +1,11 @@
 
 
 a {
-	color: gray;
+	color: gray !important;
 }
 
 a:hover {
-	color: black;
+	color: black !important;
 }
 
 .sidebar-a {
@@ -80,6 +80,8 @@ a:hover {
 	color: red !important;
 	border-color:lightgray !important;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 0.9;
+    margin: 0;
 
 }
 
