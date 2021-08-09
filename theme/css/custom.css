@@ -77,12 +77,15 @@ a:hover {
 
 .navbar-nav li:hover .dropdown-menu {
 	display: block;
-	background-color: white;
 	border-color: lightgray;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
     line-height: 0.9;
     margin: 0;
 
+}
+
+.dropdown-item:hover {
+	background-color: white;
 }
 
 
