@@ -85,10 +85,8 @@ a:hover {
 
 .dropdown-item:hover {
 	background-color: white;
-	color: black;
+	color: gray;
 }
-
-
 
 .black-box {
 	border-radius: 0;
