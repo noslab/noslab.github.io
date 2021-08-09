@@ -244,10 +244,9 @@ figure.floatcenter, .align-center {
 .navbar-nav li:hover .dropdown-menu {
 	display: block;
     color: #fff;
+    background-color: black;
     font-family: "HelveticaNeue-CondensedBold","Helvetica Neue CE 600 Condensed","Helvetica Neue LT Condensed","Helvetica Neue 600 Condensed","HelveticaNeue-BoldCondensed","Helvetica Neue BoldCondensed","Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 60px;
     font-stretch: condensed;
-    font-weight: 700;
     line-height: 0.9;
     margin: 0;
 
