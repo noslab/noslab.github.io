@@ -243,6 +243,7 @@ figure.floatcenter, .align-center {
 
 .navbar-nav li:hover .dropdown-menu {
 	display: block;
+    color: inherit;
 }
 
 /* rotate caret on hover */
