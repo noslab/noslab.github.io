@@ -87,7 +87,7 @@ a:hover {
 
 .dropdown-item:hover {
 	background-color: white;
-	border-color: lightgray;
+	border-color: transparent;
 	color: lightgray;
 }
 
