@@ -1,3 +1,6 @@
 #ignore file type
 
 *.swp
+/**/*.swp
+/**/**/*.swp
+/**/**/**/*.swp
