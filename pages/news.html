@@ -86,7 +86,7 @@
 						
 							// get the number of files in folder
 							const fs = require('fs');
-							const files = fs.readdirSync('/news');
+							const files = fs.readdir('/news/');
 
 							for (newsIndex = files.length - 1; newsIndex > 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
