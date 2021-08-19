@@ -93,19 +93,9 @@
 					<div class="entry-content">
 
 						<h3>Latest News</h3>
-						<div class="card proj" style="background-color:rgba(0,0,0,0.9)">
-							<div class="card__content">
-								<div class="card__title">
-									<a class="sidebar-a" href="mailto:donghyun@changwon.ac.kr"><h5><i class="fa fa-bullhorn" aria-hidden="true"></i> Openings for Intern Students</h5></a>
-								</div>
-								<br>
-								<p class="card__text" style="font-size:1.1em; color:white">
-								The NOSLab lead by Professor <a class="sidebar-a" href="https://dhkangd.github.io">Donghyun Kang</a> has openings for undergraduate and (potential) graduate students. If you are interested in building and breaking systems with us, please contact <a class="sidebar-a" href="mailto:donghyun@changwon.ac.kr">NOSLab</a> with your CV.</p>
-							</div>
-						</div>
+						<!-- ######################################################################################################################################### -->
+						<!-- ######################################################################################################################################### -->
 
-						<!-- ######################################################################################################################################### -->
-						<!-- ######################################################################################################################################### -->
 						<div id=latestNews></div>
 
 
@@ -153,6 +143,8 @@
 									$("#1").load("/pages/1.html")
 									$("#2").load("/pages/1.html")
 
+									$('#latestNews').append('<div id="news0" class="card proj" style="background-color:rgba(0,0,0,0.9)"></div>')
+									$('#news0').load('/news/news0.html') 
 
 									for (newsIndex = 16; newsIndex > 11; newsIndex--) {
 														$('#latestNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
