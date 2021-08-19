@@ -55,10 +55,8 @@
 
 							<h3>News and Highlights</h3>
 
-							<div class="card proj" id=1> </div>
-							<div class="card proj" id=2> </div>
-
-
+							<div id=allNews></div>
+							
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
 
@@ -83,18 +81,17 @@
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
-							var index=1
-							var max=2
 							$("#menu").load("/menu.html")
 
-							for (index = 1; index <= max; index++){
-											$('#'+index).load('/news/'+index+'.html')
+							for (newsIndex = 16; newsIndex > 0; newsIndex--){
+											$('#allNews').append('<div id="news'+ i +'" class="card proj"></div>')
 										}
 
 						});
 		</script>   
 
 
+												<!-- $('#'+newsIndex).load('/news/'+newsIndex+'.html') -->
 
 		<script src="/theme/js/jquery.min.js"></script>
 
