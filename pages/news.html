@@ -82,8 +82,8 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
-
-							for (newsIndex = 16; newsIndex > 0; newsIndex--){
+							var newsIndex = 16
+							for (; newsIndex > 0; newsIndex--){
 											$('#allNews').append('<div id="news'+ i +'" class="card proj"></div>')
 										}
 
