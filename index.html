@@ -106,87 +106,7 @@
 
 						<!-- ######################################################################################################################################### -->
 						<!-- ######################################################################################################################################### -->
-
-						<div class="card proj">
-							<div class="card__content">
-								<div class="card__title">
-									<a href="#"><h5><i class="fa fa-trophy" aria-hidden="true"></i> Best Paper Award!</h5></a>
-								</div>
-								<p class="card__text"><strong>[June, 2021]</strong>
-								Jinseo Choi (B.S student) won the Best Paper Award (Undergraduate Student) at the Korea Computer Congress (KCC) 2021 for "Analysis of the Tensorflow Performance by I/O Interference"
-								</p>
-							</div>
-							<br>
-							<div class="card__image__small"><img src="/assets/img/award_kcc21.png" ></img></div> 
-						</div>
-
-
-						<div class="card proj">
-							<div class="card__content">
-								<div class="card__title">
-									<a href="#"><h5><i class="fa fa-user-plus" aria-hidden="true"></i> New Faces!</h5></a>
-								</div>
-								<p class="card__text"><strong>[June, 2021]</strong>
-								Two of the interns (Jaewoo Kim and Sungmoo Son) joined for summer vacation have started the internship at NOSLab. Welcome aboard!!
-								</p>
-							</div>
-							<div class="card__image"><img src="/assets/gallery/20210621_newface.jpeg"></img></div>
-						</div>
-
-						<div class="card proj">
-							<div class="card__content">
-								<div class="card__title">
-									<a href="#"><h5><i class="fa fa-trophy" aria-hidden="true"></i> New Funding!</h5></a>
-								</div>
-								<p class="card__text"><strong>[June, 2021]</strong>
-								NOSLab received new funding (2021-2027) from 
-								<a href="https://www.nrf.re.kr">NRF (National Research Foundation of Korea)</a> 
-								under the research title "Learning-based System Software for Green AI Environments" (PI: Prof. Donghyun Kang).
-								</p>
-							</div>
-							<br>
-							<div class="card__image__small"><img src="/assets/img/nrf.png"></img></div> 
-						</div>
-
-						<div class="card proj">
-							<div class="card__content">
-								<div class="card__title">
-									<a href="#"><h5><i class="fa fa-trophy" aria-hidden="true"></i> New Funding!</h5></a>
-								</div>
-								<p class="card__text"><strong>[May, 2021]</strong>
-								NOSLab received new funding (2021) from 
-								<a href="https://lincplus.changwon.ac.kr/">Changwon National University / Link+</a>
-								under the research title "Real-time Parking System" (PI: Prof. Donghyun Kang).
-								</p>
-							</div>
-							<br>
-							<div class="card__image__small"><img src="/assets/img/cwnu_link.png"></img></div> 
-						</div>
-
-
-						<div class="card proj">
-							<div class="card__content">
-								<div class="card__title">
-									<a href="#"><h5><i class="fa fa-star" aria-hidden="true"></i> 2020 Winter Internships Finished!</h5></a>
-								</div>
-								<p class="card__text"><strong>[February, 2021]</strong>
-								Intern (Jinseo Choi) joined for winter vacation have successfully finished the internship at NOSLab. 
-								He had shown his passions and achieved great results at 
-								</p>
-							</div>
-							<div>
-								<ul style="font-size:0.9em">
-									<li>Reading papers including top-tier conferences or journals</li>
-									<li>Porting DiskSim simulator with SSD model in Linux operating system</li>
-									<li>Understanding how to use Cgroup, FIO benchmark, and Blktrace</li>
-									<li>Measuring overall performance at various configurations</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="card proj" id="1"></div>
-						<div class="card proj" id="2"></div>
-
+						<div id=latestNews></div>
 
 
 
@@ -227,12 +147,22 @@
 			<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 			<script type="text/javascript">
-$(document).ready(function(){
-	$("#menu").load("/menu.html")
-	$("#sidebar").load("/sidebar.html")
-	$("#1").load("/pages/1.html")
-	$("#2").load("/pages/1.html")
-});
+				$(document).ready(function(){
+									$("#menu").load("/menu.html")
+									$("#sidebar").load("/sidebar.html")
+									$("#1").load("/pages/1.html")
+									$("#2").load("/pages/1.html")
+
+
+									for (newsIndex = 16; newsIndex > 11; newsIndex--) {
+														$('#latestNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
+														$('#news'+newsIndex).load('/news/news'+newsIndex+'.html') 
+													}
+
+
+
+
+								});
 			</script>   
 
 			<script src="/theme/js/jquery.min.js"></script>
