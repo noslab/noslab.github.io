@@ -88,7 +88,7 @@
 							var fs = require('fs');
 							var files = fs.readdirSync('/news');
 
-							for (newsIndex = files - 1; newsIndex > 0; newsIndex--) {
+							for (newsIndex = files.length - 1; newsIndex > 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 											$('#news'+newsIndex).load('/news/news'+newsIndex+'.html') 
 										}
