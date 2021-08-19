@@ -146,7 +146,8 @@
 									$('#latestNews').append('<div id="news0" class="card proj" style="background-color:rgba(0,0,0,0.9)"></div>')
 									$('#news0').load('/news/news0.html') 
 
-									for (newsIndex = 16; newsIndex > 11; newsIndex--) {
+									var maxCnt = 16
+									for (newsIndex = maxCnt; newsIndex > maxCnt - 5; newsIndex--) {
 														$('#latestNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 														$('#news'+newsIndex).load('/news/news'+newsIndex+'.html') 
 													}
