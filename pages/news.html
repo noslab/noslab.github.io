@@ -83,9 +83,10 @@
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
 							var newsIndex = 16
-							for (; newsIndex > 0; newsIndex--){
+							while (newsIndex > 0){
 											$('#news'+newsIndex).load('/news/'+newsIndex+'.html') 
 											$('#allNews').append('<div id="news'+ newsIndex +'" class="card proj"></div>')
+											newsIndex--
 										}
 
 						});
