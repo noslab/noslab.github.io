@@ -82,12 +82,10 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
-							for (newsIndex = 16; newsIndex > 0; newsIndex--){
-											$('#news' + newsIndex).load('/news/news' + newsIndex + '.html') 
-										}
 
 							for (newsIndex = 16; newsIndex > 0; newsIndex--){
-											$('#allNews').append('<div id="news'+ newsIndex +'" class="card proj"></div>')
+											$('#news' + newsIndex).load('/news/news' + newsIndex + '.html') 
+											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 										}
 
 
