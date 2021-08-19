@@ -85,8 +85,8 @@
 							$("#menu").load("/menu.html")
 						
 							// get the number of files in folder
-							var fs = require('fs');
-							var files = fs.readdirSync('/news');
+							const fs = require('fs');
+							const files = fs.readdirSync('/news');
 
 							for (newsIndex = files.length - 1; newsIndex > 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
