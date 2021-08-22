@@ -77,9 +77,6 @@
 								<div class="card__image"><img src="/assets/gallery/20201117_noslab.jpg"></img></div>
 							</div>
 
-							<input id='file-input' type='file' multiple>
-
-
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
 
@@ -105,17 +102,6 @@
 		<script type="text/javascript">
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
-
-
-							var fileInput = document.getElementById('file-input');
-							fileInput.addEventListener('change', function(event) {
-											var input = event.target;
-
-											for (var i = 0; i < input.files.length; i++) {
-															console.log(input.files[i].name);
-															console.log(fileInput);
-														}
-										});
 
 
 						});
