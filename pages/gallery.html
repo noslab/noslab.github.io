@@ -109,7 +109,7 @@
 
 							var fs = require('fs');
 							var files = fs.readdirSync('/pages/gallery/');
-						
+
 							$('#galleryList').append(files)
 
 
@@ -117,6 +117,15 @@
 							var files = fileInput.files;
 							// cache files.length
 							var fl = files.length;
+
+							var i = 0;
+
+							while ( i < fl) {
+											// localize file var in the loop
+											var file = files[i];
+											alert(file.name);
+											i++;
+										}
 							$('#galleryList').append(fl)
 
 						});
