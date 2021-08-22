@@ -106,10 +106,10 @@
 							$("#menu").load("/menu.html")
 
 							//requiring path and fs modules
-							const path = require('/pages/gallery/');
+							const path = require('path');
 							const fs = require('fs');
 							//joining path of directory 
-							const directoryPath = path.join(__dirname, 'Documents');
+							const directoryPath = path.join(__dirname, '/pages/gallery/');
 							//passsing directoryPath and callback function
 							fs.readdir(directoryPath, function (err, files) {
 											    //handling error
