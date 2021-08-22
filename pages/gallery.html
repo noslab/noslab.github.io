@@ -77,6 +77,7 @@
 								<div class="card__image"><img src="/assets/gallery/20201117_noslab.jpg"></img></div>
 							</div>
 
+							<div id=galleryList></div>
 
 
 							<!-- ######################################################################################################################################### -->
@@ -102,9 +103,16 @@
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript">
-$(document).ready(function(){
-	$("#menu").load("/menu.html")
-});
+			$(document).ready(function(){
+							$("#menu").load("/menu.html")
+
+
+							var fs = require('fs');
+							var files = fs.readdirSync('/pages/gallery/');
+						
+							$('#galleryList').append(files)
+
+						});
 		</script>   
 
 
