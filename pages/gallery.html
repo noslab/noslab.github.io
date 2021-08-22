@@ -77,8 +77,6 @@
 								<div class="card__image"><img src="/assets/gallery/20201117_noslab.jpg"></img></div>
 							</div>
 
-							<div id=galleryList></div>
-
 
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
@@ -107,27 +105,14 @@
 							$("#menu").load("/menu.html")
 
 
-							var fs = require('fs');
-							var files = fs.readdirSync('/pages/gallery/');
-							alert(files);
+							const directory = '/pages/gallery/';
+							const fs = require('fs');
 
-							$('#galleryList').append(files)
-
-
-							var fileInput = document.querySelector("/pages/gallery/");
-							var files = fileInput.files;
-							// cache files.length
-							var fl = files.length;
-
-							var i = 0;
-
-							while ( i < fl) {
-											// localize file var in the loop
-											var file = files[i];
-											alert(file.name);
-											i++;
-										}
-							$('#galleryList').append(fl)
+							fs.readdir(directory, (err, files) => {
+											files.forEach(file => {
+															alert(file.name);
+														});
+										});
 
 						});
 		</script>   
