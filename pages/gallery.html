@@ -112,6 +112,13 @@
 						
 							$('#galleryList').append(files)
 
+
+							var fileInput = document.querySelector("/pages/gallery/");
+							var files = fileInput.files;
+							// cache files.length
+							var fl = files.length;
+							$('#galleryList').append(fl)
+
 						});
 		</script>   
 
