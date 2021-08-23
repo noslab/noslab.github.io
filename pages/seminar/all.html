@@ -81,9 +81,7 @@
 								</li>
 							</ul>
 
-							<div id="2021"></div>
-							<br>
-							<div id="2020"></div>
+							<div id=allSchedule></div>
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
 
@@ -114,12 +112,20 @@
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript">
-$(document).ready(function(){
-	$("#menu").load("/menu.html")
-	$("#sidebar").load("/sidebar.html")
-	$("#2020").load("/pages/seminar/2020.html")
-	$("#2021").load("/pages/seminar/2021.html")
-});
+			$(document).ready(function(){
+							$("#menu").load("/menu.html")
+							$("#sidebar").load("/sidebar.html")
+							$("#2020").load("/pages/seminar/2020.html")
+							$("#2021").load("/pages/seminar/2021.html")
+
+							for (yearIndex = 2020; yearIndex <= 2021; yearIndex++) {
+											$('#allSchedule').append('<div id="'+yearIndex+'></div><br>')
+											$('#'+yearIndex).load('/pages/seminar/'+yearIndex+'.html') 
+										}
+
+						});
+
+			});
 		</script>   
 
 		<script src="/theme/js/jquery.min.js"></script>
