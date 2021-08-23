@@ -118,7 +118,7 @@
 							$("#2020").load("/pages/seminar/2020.html")
 							$("#2021").load("/pages/seminar/2021.html")
 
-							for (yearIndex = 2020; yearIndex <= 2021; yearIndex++) {
+							for (yearIndex = 2021; yearIndex >= 2020; yearIndex--) {
 											$('#allSchedule').append('<div id="'+yearIndex+'></div><br>')
 											$('#'+yearIndex).load('/pages/seminar/'+yearIndex+'.html') 
 										}
