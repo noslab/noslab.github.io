@@ -81,10 +81,11 @@
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 		<script type="text/javascript">
+			var globalNewsCnt = 19;
+
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
 						
-							window.globalNewsCnt = 19;
 							for (newsIndex = globalNewsCnt; newsIndex >= 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 											$('#news'+newsIndex).load('/pages/news/news'+newsIndex+'.html') 
