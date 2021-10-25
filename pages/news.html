@@ -80,12 +80,13 @@
 
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<script src="/pages/news/maxNewsCnt.js"></script>
 		<script type="text/javascript">
 
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
 						
-							maxNewsCnt = 19;
 							for (newsIndex = maxNewsCnt; newsIndex > 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 											$('#news'+newsIndex).load('/pages/news/news'+newsIndex+'.html') 
