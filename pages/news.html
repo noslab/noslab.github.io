@@ -84,7 +84,8 @@
 			$(document).ready(function(){
 							$("#menu").load("/menu.html")
 						
-							for (newsIndex = 19; newsIndex > 0; newsIndex--) {
+							globalNewsCnt = 19;
+							for (newsIndex = globalNewsCnt; newsIndex >= 0; newsIndex--) {
 											$('#allNews').append('<div id="news'+newsIndex+'" class="card proj"></div>')
 											$('#news'+newsIndex).load('/pages/news/news'+newsIndex+'.html') 
 										}
