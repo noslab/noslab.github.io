@@ -97,14 +97,14 @@
 		$(document).ready(function(){
 					$("#menu").load("/menu.html")
 					$("#sidebar").load("/sidebar.html")
-
-					$('#latestPublications').append('<div id="2018_2013"></div>')
-					$("#2018_2013").load("/pages/publications/2018_2013.html")
-
 					for (indexYear = thisYear; indexYear >= 2019; indexYear--) {
 								$('#latestPublications').append('<div id="'+indexYear+'"></div>')
 								$('#'+indexYear).load('/pages/publications/'+indexYear+'.html') 
 							}
+
+					$('#latestPublications').append('<div id="2018_2013"></div>')
+					$("#2018_2013").load("/pages/publications/2018_2013.html")
+
 				});
 	</script>   
 
