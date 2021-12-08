@@ -63,9 +63,7 @@
 							<br>
 							<br>
 
-							<div id="2022"></div>
-							<div id="2021"></div>
-							<div id="2020"></div>
+							<div id="latestPublications"></div>
 							
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
@@ -105,8 +103,9 @@
 							$("#menu").load("/menu.html")
 							$("#sidebar").load("/sidebar.html")
 
-							for (printYear = thisYear; printYear > thisYear - 3; printYear--) {
-											$('#'+printYear).load('/pages/publications/'+printYear+'.html') 
+							for (indexYear = thisYear; indexYear > thisYear - 3; indexYear--) {
+											$('#latestPublications').append('<div id="'+indexYear+'"></div>')
+											$('#'+indexYear).load('/pages/publications/'+indexYear+'.html') 
 										}
 
 
