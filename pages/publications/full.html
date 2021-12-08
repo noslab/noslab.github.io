@@ -95,15 +95,19 @@
 	<!-- ######################################################################################################################################### -->
 	<!-- ######################################################################################################################################### -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="/pages/publications/currentYear.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 					$("#menu").load("/menu.html")
 					$("#sidebar").load("/sidebar.html")
 
-					$("#2021").load("/pages/publications/2021.html")
-					$("#2020").load("/pages/publications/2020.html")
-					$("#2019").load("/pages/publications/2019.html")
+					$('#latestPublications').append('<div id="2018_2013"></div>')
 					$("#2018_2013").load("/pages/publications/2018_2013.html")
+
+					for (indexYear = thisYear; indexYear >= 2019; indexYear--) {
+								$('#latestPublications').append('<div id="'+indexYear+'"></div>')
+								$('#'+indexYear).load('/pages/publications/'+indexYear+'.html') 
+							}
 				});
 	</script>   
 
