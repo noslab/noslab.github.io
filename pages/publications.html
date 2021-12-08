@@ -63,9 +63,9 @@
 							<br>
 							<br>
 
+							<div id="2022"></div>
 							<div id="2021"></div>
 							<div id="2020"></div>
-							<div id="2019"></div>
 							
 							<!-- ######################################################################################################################################### -->
 							<!-- ######################################################################################################################################### -->
@@ -98,19 +98,23 @@
 	<!-- ######################################################################################################################################### -->
 
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+		<script src="/pages/publications/currentYear.js"></script>
 		<script type="text/javascript">
-$(document).ready(function(){
-	$("#menu").load("/menu.html")
-});
+			$(document).ready(function(){
+							$("#menu").load("/menu.html")
+							$("#sidebar").load("/sidebar.html")
+
+							for (printYear = thisYear; printYear > thisYear - 3; printYear--) {
+											$(printYear).load('/pages/publications/'+printYear+'.html') 
+										}
+
+
+
+						});
 		</script>   
 
-		<script type="text/javascript">
-$(document).ready(function(){
-	$("#sidebar").load("/sidebar.html")
-});
-		</script>   
-
-
+	
 	<!-- ######################################################################################################################################### -->
 	<!-- ######################################################################################################################################### -->
 	<script type="text/javascript">
