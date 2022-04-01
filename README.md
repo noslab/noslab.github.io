@@ -1,1 +1,1 @@
-# noslab.github.io @ Changwon National University
+# NOSLab @ Changwon National University
