@@ -50,9 +50,6 @@ a:hover {
 .label-post { background-color: #47FF9C; }
 .label-pat { background-color: #FFDC3C; }
 
-.label-sci { background-color: #FFFFFF; color:#EA6FD5; border-color:#EA6FD5}
-.label-top { background-color: #FFFFFF; color:#0A82FF; border-color:#0A82FF}
-
 .navbar {
 	width: 100%;
 	background-color: rgba(0,0,0,0.85);
