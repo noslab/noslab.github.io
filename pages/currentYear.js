@@ -1,1 +1,1 @@
-var thisYear = 2023;
+var thisYear = 2024;
