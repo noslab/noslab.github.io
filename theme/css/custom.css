@@ -144,7 +144,7 @@ span.tag {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
-	padding: 1rem;
+	
 }
 
 .card__content p {
