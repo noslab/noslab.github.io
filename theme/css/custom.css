@@ -144,13 +144,13 @@ span.tag {
 	display: flex;
 	flex: 1 1 auto;
 	flex-direction: column;
-	
+	padding: 1rem;
 }
 
 .card__content p {
 	margin-left: 0;
 	margin-bottom: auto;
-	height: 6rem;
+	height: 5rem;
 }
 
 .card__image {
