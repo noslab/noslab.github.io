@@ -1,1 +1,1 @@
-var maxNewsCnt = 72;
+var maxNewsCnt = 73;
